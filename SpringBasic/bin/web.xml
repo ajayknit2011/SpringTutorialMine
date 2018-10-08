@@ -1,0 +1,39 @@
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+<bean id="t1" class="Test"></bean>
+<!-- <bean id="book" class ="Book">
+    <property name="bookName" value="JAVA HeadFirst"></property>
+    </bean> -->
+    
+    <bean id="b1" class ="Book">
+    <property name="bookName" value="JAVA HeadFirst"></property>
+    <property name="publisherName" value="Ajay Thakur"></property>
+    <property name="price" value="856"></property>
+    </bean>
+<!--        
+     <bean id="b2" class ="Book">
+    <property name="bookName" value="JAVA 2"></property>
+    <property name="publisherName" value="Ajay"></property>
+    <property name="price" value="800"></property>
+    </bean>
+    
+     <bean id="b3" class ="Book">
+    <property name="bookName" value="JHeadFirst"></property>
+    <property name="publisherName" value="Thakur"></property>
+    <property name="price" value="85"></property>
+    </bean>
+     -->
+     <bean id="lib" class ="Library">
+     <property name="book" ref="b1">
+     
+     </property></bean>
+<!--      
+     <bean id="showbook" class ="ShowBook">
+     <property name="book" ref="b1">
+      <property name="book" ref="b2">
+       <property name="book" ref="b3">
+     </bean> -->
+
+</beans>

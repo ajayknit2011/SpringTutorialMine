@@ -1,0 +1,10 @@
+public class Book {
+
+	String bookName;
+	String publisherName;
+	int price;
+	
+	Book(){
+		System.out.println("Book class is created");
+	}
+}
